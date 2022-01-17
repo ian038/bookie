@@ -70,7 +70,7 @@ export const BooksContainer = () => {
     }, [])
 
     return (
-        <div>
+        <div className="container mx-auto py-32">
             Books
             {books.map((book) => 
                 editId === book.id ? <EditForm book={book} key={book.id} update={update} /> :
